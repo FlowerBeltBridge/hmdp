@@ -17,11 +17,6 @@ import java.util.concurrent.TimeUnit;
  */
 public class LoginInterceptor implements HandlerInterceptor {
 
-    private StringRedisTemplate stringRedisTemplate;
-
-    public LoginInterceptor(StringRedisTemplate stringRedisTemplate) {
-        this.stringRedisTemplate = stringRedisTemplate;
-    }
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
